@@ -1,1 +1,2080 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
+<!--
+  ============================================================
+  AURENIX AUDIO — Premium Luxury Headphone Landing Page
+  Version: 1.0.0
+  Architecture: Semantic HTML5 + External CSS + External JS
+  Designed for: GitHub Pages Deployment
+  Brand Identity: Dark Futuristic Luxury / Cinematic Storytelling
+  ============================================================
+-->
+
+<head>
+  <!-- ======================================================
+       META & SEO
+       ====================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>AURENIX Audio — Hear Beyond Silence</title>
+  <meta name="title" content="AURENIX Audio — Hear Beyond Silence" />
+  <meta name="description" content="AURENIX NOVA X1 — The world's most advanced luxury wireless headphones. 40-hour battery, AI-powered Adaptive ANC, Hi-Res Audio. Sound engineered for those who demand perfection." />
+  <meta name="keywords" content="luxury headphones, premium audio, wireless headphones, noise cancelling, hi-res audio, AURENIX, NOVA X1, audiophile, premium sound" />
+  <meta name="author" content="AURENIX Audio" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aurenixaudio.com/" />
+  <meta property="og:title" content="AURENIX Audio — Hear Beyond Silence" />
+  <meta property="og:description" content="Experience sound redefined. NOVA X1 — 40-hour battery, AI Adaptive ANC, Hi-Res 24-bit audio. Crafted for the extraordinary." />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="AURENIX Audio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@aurenixaudio" />
+  <meta name="twitter:title" content="AURENIX Audio — Hear Beyond Silence" />
+  <meta name="twitter:description" content="Experience sound redefined. NOVA X1 — 40-hour battery, AI Adaptive ANC, Hi-Res 24-bit audio." />
+  <meta name="twitter:image" content="/assets/twitter-card.jpg" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aurenixaudio.com/" />
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Premium Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ======================================================
+       SCHEMA.ORG STRUCTURED DATA (JSON-LD)
+       ====================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "AURENIX NOVA X1",
+    "brand": {
+      "@type": "Brand",
+      "name": "AURENIX Audio"
+    },
+    "description": "World-class luxury wireless headphones with AI-powered Adaptive ANC, 40-hour battery life, and Hi-Res 24-bit audio. Handcrafted from aerospace-grade titanium and full-grain leather.",
+    "category": "Consumer Electronics > Audio > Headphones",
+    "image": "/assets/nova-x1-product.jpg",
+    "url": "https://aurenixaudio.com/",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "799.00",
+      "availability": "https://schema.org/PreOrder",
+      "validFrom": "2025-01-01"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1284"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AURENIX Audio",
+    "url": "https://aurenixaudio.com",
+    "logo": "/assets/aurenix-logo.svg",
+    "sameAs": [
+      "https://twitter.com/aurenixaudio",
+      "https://instagram.com/aurenixaudio",
+      "https://youtube.com/@aurenixaudio"
+    ]
+  }
+  </script>
+</head>
+
+<body class="body--dark" data-scroll-container>
+
+  <!-- ======================================================
+       LOADING SCREEN
+       Cinematic brand intro on page load
+       ====================================================== -->
+  <div class="loader" id="loader" role="status" aria-label="Loading AURENIX Audio" data-loader>
+    <div class="loader__inner">
+      <div class="loader__logo-wrap">
+        <span class="loader__wordmark" aria-hidden="true">AURENIX</span>
+        <div class="loader__progress-track">
+          <div class="loader__progress-bar" data-loader-bar></div>
+        </div>
+        <span class="loader__tagline" aria-hidden="true">Initializing Sound Engine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       CURSOR (Custom premium cursor)
+       ====================================================== -->
+  <div class="cursor" id="cursor" aria-hidden="true" data-cursor>
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- ======================================================
+       SITE WRAPPER
+       Master wrapper for all page content
+       ====================================================== -->
+  <div class="site-wrapper" id="site-wrapper" data-site-wrapper>
+
+    <!-- ====================================================
+         NAVIGATION
+         Sticky transparent-to-filled nav with logo and links
+         ==================================================== -->
+    <header class="nav" id="nav" role="banner" aria-label="AURENIX Audio main navigation" data-nav>
+      <div class="nav__container">
+
+        <!-- Nav: Brand Logo -->
+        <div class="nav__brand">
+          <a href="/" class="nav__logo-link" aria-label="AURENIX Audio — Return to homepage">
+            <span class="nav__logo-wordmark">AURENIX</span>
+            <span class="nav__logo-sub">AUDIO</span>
+          </a>
+        </div>
+
+        <!-- Nav: Primary Links -->
+        <nav class="nav__links" role="navigation" aria-label="Primary navigation">
+          <ul class="nav__list" role="list">
+            <li class="nav__item"><a href="#story" class="nav__link" data-nav-link>Story</a></li>
+            <li class="nav__item"><a href="#product" class="nav__link" data-nav-link>NOVA X1</a></li>
+            <li class="nav__item"><a href="#sound" class="nav__link" data-nav-link>Sound</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link" data-nav-link>Gallery</a></li>
+            <li class="nav__item"><a href="#specs" class="nav__link" data-nav-link>Specs</a></li>
+          </ul>
+        </nav>
+
+        <!-- Nav: Action Buttons -->
+        <div class="nav__actions">
+          <a href="#cta" class="btn btn--nav btn--ghost" aria-label="Pre-order AURENIX NOVA X1">Pre-Order</a>
+          <button class="nav__menu-toggle" id="nav-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+            <span class="nav__hamburger" aria-hidden="true">
+              <span class="nav__hamburger-line"></span>
+              <span class="nav__hamburger-line"></span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Nav: Mobile Fullscreen Menu -->
+      <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation menu" aria-hidden="true" data-mobile-menu>
+        <nav class="nav__mobile-nav" aria-label="Mobile navigation">
+          <ul class="nav__mobile-list" role="list">
+            <li class="nav__mobile-item"><a href="#story" class="nav__mobile-link" data-mobile-link>Story</a></li>
+            <li class="nav__mobile-item"><a href="#product" class="nav__mobile-link" data-mobile-link>NOVA X1</a></li>
+            <li class="nav__mobile-item"><a href="#sound" class="nav__mobile-link" data-mobile-link>Sound</a></li>
+            <li class="nav__mobile-item"><a href="#gallery" class="nav__mobile-link" data-mobile-link>Gallery</a></li>
+            <li class="nav__mobile-item"><a href="#specs" class="nav__mobile-link" data-mobile-link>Specs</a></li>
+            <li class="nav__mobile-item"><a href="#testimonials" class="nav__mobile-link" data-mobile-link>Reviews</a></li>
+          </ul>
+          <div class="nav__mobile-cta">
+            <a href="#cta" class="btn btn--primary btn--full" data-mobile-link>Pre-Order Now — $799</a>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- ====================================================
+         SECTION 01: HERO
+         Fullscreen cinematic hero with headline and CTA
+         ==================================================== -->
+    <section class="hero" id="hero" aria-label="AURENIX NOVA X1 Hero" data-section="hero">
+
+      <!-- Hero: Background Layer -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-gradient"></div>
+        <div class="hero__bg-noise"></div>
+        <div class="hero__bg-grid"></div>
+        <!-- Particle canvas for ambient motion -->
+        <canvas class="hero__particles" id="hero-particles" aria-hidden="true" data-particles></canvas>
+      </div>
+
+      <!-- Hero: Main Content -->
+      <div class="hero__container">
+
+        <!-- Hero: Pre-headline Badge -->
+        <div class="hero__badge-wrap" data-animate="fade-up" data-delay="200">
+          <div class="hero__badge" role="text">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span class="hero__badge-text">Introducing — NOVA X1</span>
+          </div>
+        </div>
+
+        <!-- Hero: Primary Headline -->
+        <div class="hero__headline-wrap" data-animate="fade-up" data-delay="400">
+          <h1 class="hero__headline" aria-label="Hear Beyond Silence — AURENIX NOVA X1">
+            <span class="hero__headline-line hero__headline-line--1">
+              <span class="hero__headline-word" data-word>Hear</span>
+              <span class="hero__headline-word hero__headline-word--italic" data-word>Beyond</span>
+            </span>
+            <span class="hero__headline-line hero__headline-line--2">
+              <span class="hero__headline-word" data-word>Silence</span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- Hero: Sub-headline -->
+        <div class="hero__subheadline-wrap" data-animate="fade-up" data-delay="600">
+          <p class="hero__subheadline">
+            The NOVA X1 is not a headphone.<br />
+            It is the space between notes — where music becomes memory.
+          </p>
+        </div>
+
+        <!-- Hero: CTA Buttons -->
+        <div class="hero__cta-wrap" data-animate="fade-up" data-delay="800">
+          <a href="#cta" class="btn btn--primary btn--hero" aria-label="Pre-order AURENIX NOVA X1 for $799">
+            <span class="btn__text">Pre-Order — $799</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+          <a href="#story" class="btn btn--secondary btn--hero" aria-label="Explore the NOVA X1 story">
+            <span class="btn__text">Explore the Story</span>
+          </a>
+        </div>
+
+        <!-- Hero: Product Teaser Image -->
+        <div class="hero__product-wrap" data-animate="scale-in" data-delay="600" aria-hidden="true">
+          <div class="hero__product-glow" aria-hidden="true"></div>
+          <img
+            class="hero__product-img"
+            src="/assets/nova-x1-hero.png"
+            alt="AURENIX NOVA X1 luxury wireless headphones in midnight obsidian finish, floating on dark background"
+            width="800"
+            height="800"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <!-- Floating micro-labels around hero product -->
+          <div class="hero__floating-label hero__floating-label--1" aria-hidden="true">
+            <span class="hero__fl-dot"></span>
+            <span class="hero__fl-text">40hr Battery</span>
+          </div>
+          <div class="hero__floating-label hero__floating-label--2" aria-hidden="true">
+            <span class="hero__fl-dot"></span>
+            <span class="hero__fl-text">AI ANC</span>
+          </div>
+          <div class="hero__floating-label hero__floating-label--3" aria-hidden="true">
+            <span class="hero__fl-dot"></span>
+            <span class="hero__fl-text">Hi-Res 24bit</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero: Specs Bar (bottom strip) -->
+      <div class="hero__specs-bar" aria-label="Key specifications" data-animate="fade-up" data-delay="1000">
+        <div class="hero__specs-container">
+          <div class="hero__spec-item">
+            <span class="hero__spec-value">40</span>
+            <span class="hero__spec-unit">hrs</span>
+            <span class="hero__spec-label">Battery Life</span>
+          </div>
+          <div class="hero__spec-divider" aria-hidden="true"></div>
+          <div class="hero__spec-item">
+            <span class="hero__spec-value">-42</span>
+            <span class="hero__spec-unit">dB</span>
+            <span class="hero__spec-label">Noise Reduction</span>
+          </div>
+          <div class="hero__spec-divider" aria-hidden="true"></div>
+          <div class="hero__spec-item">
+            <span class="hero__spec-value">24</span>
+            <span class="hero__spec-unit">bit</span>
+            <span class="hero__spec-label">Hi-Res Audio</span>
+          </div>
+          <div class="hero__spec-divider" aria-hidden="true"></div>
+          <div class="hero__spec-item">
+            <span class="hero__spec-value">5</span>
+            <span class="hero__spec-unit">min</span>
+            <span class="hero__spec-label">Quick Charge = 3hr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero: Scroll Indicator -->
+      <div class="hero__scroll-indicator" aria-label="Scroll to explore" data-animate="fade-up" data-delay="1200">
+        <div class="hero__scroll-wrap">
+          <div class="hero__scroll-line" aria-hidden="true">
+            <div class="hero__scroll-dot" aria-hidden="true"></div>
+          </div>
+          <span class="hero__scroll-text">Scroll to explore</span>
+        </div>
+      </div>
+
+    </section>
+    <!-- END: HERO SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 02: STICKY STORYTELLING
+         Scroll-driven narrative with changing text panels
+         and image sequence frame container
+         ==================================================== -->
+    <section class="story" id="story" aria-label="AURENIX NOVA X1 product story" data-section="story">
+
+      <!-- Story: Sticky Scroll Wrapper -->
+      <div class="story__sticky-wrapper" data-story-wrapper>
+
+        <!-- Story: Sticky Visual Column (image sequence) -->
+        <div class="story__sticky-visual" aria-hidden="true" data-story-visual>
+          <div class="story__visual-inner">
+
+            <!-- Frame Sequence Container for JS animation (200 frames: /frames/frame_001.jpg → frame_200.jpg) -->
+            <div class="story__frame-container" id="story-frame-container" data-frame-container aria-hidden="true">
+              <canvas
+                class="story__frame-canvas"
+                id="story-canvas"
+                aria-hidden="true"
+                data-story-canvas
+              ></canvas>
+              <!-- Fallback static image while frames load -->
+              <img
+                class="story__frame-fallback"
+                src="/assets/nova-x1-story-fallback.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                data-frame-fallback
+              />
+            </div>
+
+            <!-- Visual Overlay Glows -->
+            <div class="story__visual-glow story__visual-glow--left" aria-hidden="true"></div>
+            <div class="story__visual-glow story__visual-glow--bottom" aria-hidden="true"></div>
+
+          </div>
+        </div>
+
+        <!-- Story: Scrolling Text Panels Column -->
+        <div class="story__panels" data-story-panels>
+
+          <!-- Story Panel 01: Origin -->
+          <div class="story__panel" id="story-panel-1" data-panel="1" data-frame-start="0" data-frame-end="40">
+            <div class="story__panel-inner">
+              <div class="story__panel-content">
+                <span class="story__panel-number" aria-hidden="true">01</span>
+                <h2 class="story__panel-headline">
+                  Born from<br />
+                  <em>obsession</em>.
+                </h2>
+                <p class="story__panel-body">
+                  Seven years. Forty-three prototypes. One uncompromising vision.
+                  The AURENIX NOVA X1 began as a whisper — a belief that no headphone
+                  had ever truly captured what live music feels like.
+                </p>
+                <p class="story__panel-body">
+                  Our founders sat in concert halls, recording studios, and mountain
+                  silences. They listened. Not to headphones. To the world.
+                  Then they built something worthy of it.
+                </p>
+                <div class="story__panel-stat" aria-label="7 years of development">
+                  <span class="story__stat-value">7</span>
+                  <span class="story__stat-label">Years of Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Panel 02: Materials -->
+          <div class="story__panel" id="story-panel-2" data-panel="2" data-frame-start="40" data-frame-end="80">
+            <div class="story__panel-inner">
+              <div class="story__panel-content">
+                <span class="story__panel-number" aria-hidden="true">02</span>
+                <h2 class="story__panel-headline">
+                  Aerospace<br />
+                  <em>precision</em>.
+                </h2>
+                <p class="story__panel-body">
+                  The headband is machined from Grade 5 titanium — lighter than
+                  aluminum, stronger than steel. The ear cups are carved from a
+                  single billet of anodized aluminum, achieving tolerances
+                  tighter than 0.02mm.
+                </p>
+                <p class="story__panel-body">
+                  The cushions? Full-grain Nappa leather sourced from a 200-year-old
+                  tannery in Córdoba, Spain. Temperature-regulating memory foam
+                  beneath. Every contact point reimagined.
+                </p>
+                <div class="story__panel-material-tags" aria-label="Materials used">
+                  <span class="story__material-tag">Grade 5 Titanium</span>
+                  <span class="story__material-tag">Anodized Aluminum</span>
+                  <span class="story__material-tag">Nappa Leather</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Panel 03: Sound Engineering -->
+          <div class="story__panel" id="story-panel-3" data-panel="3" data-frame-start="80" data-frame-end="130">
+            <div class="story__panel-inner">
+              <div class="story__panel-content">
+                <span class="story__panel-number" aria-hidden="true">03</span>
+                <h2 class="story__panel-headline">
+                  Sound that<br />
+                  <em>breathes</em>.
+                </h2>
+                <p class="story__panel-body">
+                  At the core of NOVA X1 are our proprietary 50mm Beryllium-coated
+                  dynamic drivers — the same material used in concert hall
+                  tweeters and professional studio monitors.
+                </p>
+                <p class="story__panel-body">
+                  Ultra-light, ultra-rigid. Beryllium moves 40% faster than conventional
+                  drivers, allowing transients to arrive with surgical precision and
+                  fade with natural, unhurried decay.
+                </p>
+                <div class="story__panel-stat" aria-label="Frequency response: 4Hz to 96kHz">
+                  <span class="story__stat-value">4Hz</span>
+                  <span class="story__stat-separator" aria-hidden="true">→</span>
+                  <span class="story__stat-value">96kHz</span>
+                  <span class="story__stat-label">Frequency Response</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Panel 04: Intelligence -->
+          <div class="story__panel" id="story-panel-4" data-panel="4" data-frame-start="130" data-frame-end="170">
+            <div class="story__panel-inner">
+              <div class="story__panel-content">
+                <span class="story__panel-number" aria-hidden="true">04</span>
+                <h2 class="story__panel-headline">
+                  Intelligence<br />
+                  <em>that listens</em>.
+                </h2>
+                <p class="story__panel-body">
+                  The AURENIX AX-7 Neural Processor runs our proprietary Adaptive
+                  Intelligence Engine — a real-time AI model that maps your ear
+                  canal acoustics in under 2 seconds and continuously tunes the
+                  sound signature to your unique anatomy.
+                </p>
+                <p class="story__panel-body">
+                  Six outward-facing microphones. Four inward-facing. The system
+                  analyzes 65,536 acoustic data points per second to deliver
+                  ANC that is not just reactive — it is predictive.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Panel 05: Legacy -->
+          <div class="story__panel" id="story-panel-5" data-panel="5" data-frame-start="170" data-frame-end="200">
+            <div class="story__panel-inner">
+              <div class="story__panel-content">
+                <span class="story__panel-number" aria-hidden="true">05</span>
+                <h2 class="story__panel-headline">
+                  An object<br />
+                  <em>for eternity</em>.
+                </h2>
+                <p class="story__panel-body">
+                  Every NOVA X1 is assembled by hand in our atelier in Kyoto, Japan.
+                  A team of twelve master craftspeople. Each pair takes 14 hours
+                  to complete. Each is signed and numbered.
+                </p>
+                <p class="story__panel-body">
+                  This is not a product you replace in two years.
+                  This is an heirloom. A statement. A companion for life.
+                </p>
+                <a href="#product" class="btn btn--primary btn--story" aria-label="Discover the full NOVA X1 product">
+                  <span class="btn__text">Discover NOVA X1</span>
+                  <span class="btn__icon" aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- END: Story Panels -->
+
+      </div>
+      <!-- END: Sticky Wrapper -->
+
+    </section>
+    <!-- END: STORY SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 03: PRODUCT REVEAL
+         Large centred product showcase with floating feature labels
+         ==================================================== -->
+    <section class="product" id="product" aria-label="AURENIX NOVA X1 product showcase" data-section="product">
+
+      <div class="product__container">
+
+        <!-- Product: Section Label -->
+        <div class="product__label-wrap" data-animate="fade-up">
+          <span class="section-label" role="text">The Product</span>
+        </div>
+
+        <!-- Product: Headline -->
+        <div class="product__headline-wrap" data-animate="fade-up" data-delay="100">
+          <h2 class="product__headline">
+            NOVA X1
+          </h2>
+          <p class="product__subheadline">
+            Midnight Obsidian Edition
+          </p>
+        </div>
+
+        <!-- Product: Central Stage -->
+        <div class="product__stage" role="img" aria-label="AURENIX NOVA X1 headphones — full product view with feature callouts">
+
+          <!-- Product: Glow backdrop -->
+          <div class="product__stage-glow" aria-hidden="true"></div>
+
+          <!-- Product: Main image -->
+          <div class="product__image-wrap" data-animate="scale-in" data-delay="200">
+            <img
+              class="product__image"
+              src="/assets/nova-x1-product.png"
+              alt="AURENIX NOVA X1 headphones — full 360° view in Midnight Obsidian finish"
+              width="900"
+              height="900"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Product: Floating Feature Labels (positioned absolutely around product) -->
+
+          <!-- Label: Beryllium Driver -->
+          <div class="product__feature-label product__feature-label--tl" data-animate="fade-in" data-delay="600" role="complementary" aria-label="Feature: 50mm Beryllium Driver">
+            <div class="product__fl-connector" aria-hidden="true">
+              <div class="product__fl-dot"></div>
+              <div class="product__fl-line"></div>
+            </div>
+            <div class="product__fl-card">
+              <span class="product__fl-title">50mm Beryllium Driver</span>
+              <span class="product__fl-desc">Ultra-lightweight. Ultra-rigid. Extraordinary transient response.</span>
+            </div>
+          </div>
+
+          <!-- Label: Titanium Headband -->
+          <div class="product__feature-label product__feature-label--tr" data-animate="fade-in" data-delay="700" role="complementary" aria-label="Feature: Grade 5 Titanium Headband">
+            <div class="product__fl-card product__fl-card--right">
+              <span class="product__fl-title">Grade 5 Titanium</span>
+              <span class="product__fl-desc">Aerospace-grade headband. 218g total weight.</span>
+            </div>
+            <div class="product__fl-connector product__fl-connector--right" aria-hidden="true">
+              <div class="product__fl-line"></div>
+              <div class="product__fl-dot"></div>
+            </div>
+          </div>
+
+          <!-- Label: ANC Microphone Array -->
+          <div class="product__feature-label product__feature-label--bl" data-animate="fade-in" data-delay="800" role="complementary" aria-label="Feature: 10-microphone ANC array">
+            <div class="product__fl-connector" aria-hidden="true">
+              <div class="product__fl-dot"></div>
+              <div class="product__fl-line"></div>
+            </div>
+            <div class="product__fl-card">
+              <span class="product__fl-title">10-Mic ANC Array</span>
+              <span class="product__fl-desc">6 outward + 4 inward. AI-predictive noise cancellation.</span>
+            </div>
+          </div>
+
+          <!-- Label: Leather Cushion -->
+          <div class="product__feature-label product__feature-label--br" data-animate="fade-in" data-delay="900" role="complementary" aria-label="Feature: Nappa leather ear cushions">
+            <div class="product__fl-card product__fl-card--right">
+              <span class="product__fl-title">Nappa Leather Cushions</span>
+              <span class="product__fl-desc">Temperature-regulating memory foam. Córdoba sourced leather.</span>
+            </div>
+            <div class="product__fl-connector product__fl-connector--right" aria-hidden="true">
+              <div class="product__fl-line"></div>
+              <div class="product__fl-dot"></div>
+            </div>
+          </div>
+
+          <!-- Label: USB-C Port -->
+          <div class="product__feature-label product__feature-label--bc" data-animate="fade-in" data-delay="1000" role="complementary" aria-label="Feature: USB-C and 3.5mm connectivity">
+            <div class="product__fl-card product__fl-card--center">
+              <span class="product__fl-title">USB-C + 3.5mm</span>
+              <span class="product__fl-desc">Dual connectivity. Lossless wired. Wireless aptX Lossless.</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- END: Product Stage -->
+
+        <!-- Product: Color Variants -->
+        <div class="product__variants" data-animate="fade-up" data-delay="400" role="group" aria-label="Available color variants">
+          <span class="product__variants-label">Available in</span>
+          <div class="product__color-swatches">
+            <button
+              class="product__swatch product__swatch--obsidian is-active"
+              aria-label="Midnight Obsidian — currently selected"
+              aria-pressed="true"
+              data-color="obsidian"
+              data-color-name="Midnight Obsidian"
+            >
+              <span class="product__swatch-dot" aria-hidden="true"></span>
+            </button>
+            <button
+              class="product__swatch product__swatch--ivory"
+              aria-label="Arctic Ivory"
+              aria-pressed="false"
+              data-color="ivory"
+              data-color-name="Arctic Ivory"
+            >
+              <span class="product__swatch-dot" aria-hidden="true"></span>
+            </button>
+            <button
+              class="product__swatch product__swatch--champagne"
+              aria-label="Champagne Gold"
+              aria-pressed="false"
+              data-color="champagne"
+              data-color-name="Champagne Gold"
+            >
+              <span class="product__swatch-dot" aria-hidden="true"></span>
+            </button>
+            <button
+              class="product__swatch product__swatch--slate"
+              aria-label="Carbon Slate"
+              aria-pressed="false"
+              data-color="slate"
+              data-color-name="Carbon Slate"
+            >
+              <span class="product__swatch-dot" aria-hidden="true"></span>
+            </button>
+          </div>
+          <span class="product__color-name" id="product-color-name" aria-live="polite" role="status">Midnight Obsidian</span>
+        </div>
+
+        <!-- Product: Price and CTA -->
+        <div class="product__purchase" data-animate="fade-up" data-delay="500">
+          <div class="product__price-wrap">
+            <span class="product__price" aria-label="Price: $799">$799</span>
+            <span class="product__price-note">Free worldwide shipping · 2-year warranty</span>
+          </div>
+          <a href="#cta" class="btn btn--primary btn--product" aria-label="Pre-order AURENIX NOVA X1 — $799">
+            <span class="btn__text">Pre-Order Now</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END: PRODUCT SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 04: SOUND EXPERIENCE
+         Three-column cards: Bass / Clarity / ANC
+         ==================================================== -->
+    <section class="sound" id="sound" aria-label="AURENIX NOVA X1 sound characteristics" data-section="sound">
+
+      <div class="sound__container">
+
+        <!-- Sound: Section Header -->
+        <div class="sound__header" data-animate="fade-up">
+          <span class="section-label" role="text">The Sound</span>
+          <h2 class="sound__headline">
+            Three pillars of<br />
+            <em>sonic supremacy</em>.
+          </h2>
+          <p class="sound__subtext">
+            We did not tune the NOVA X1 for a trend. We tuned it for truth.
+            Every frequency, every harmonic — mastered.
+          </p>
+        </div>
+
+        <!-- Sound: Cards Grid -->
+        <div class="sound__grid" role="list" aria-label="Sound technology features">
+
+          <!-- Sound Card: Bass -->
+          <article class="sound__card sound__card--bass" role="listitem" data-animate="fade-up" data-delay="100" aria-label="Deep Bass technology">
+            <div class="sound__card-inner">
+              <div class="sound__card-icon-wrap" aria-hidden="true">
+                <div class="sound__card-icon">
+                  <!-- Bass waveform SVG -->
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 32 Q12 8 20 32 Q28 56 36 32 Q44 8 52 32 Q56 44 60 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="sound__card-content">
+                <h3 class="sound__card-title">Deep Bass</h3>
+                <p class="sound__card-desc">
+                  Sub-bass frequencies reach down to 4Hz — beyond the threshold of human hearing,
+                  but felt physically in your chest. A resonance that reminds you music is not
+                  just heard. It is experienced.
+                </p>
+                <div class="sound__card-spec">
+                  <span class="sound__card-spec-value">4 Hz</span>
+                  <span class="sound__card-spec-label">Lowest Response</span>
+                </div>
+              </div>
+              <div class="sound__card-visual" aria-hidden="true">
+                <div class="sound__bass-viz">
+                  <div class="sound__bass-bar" data-bar style="--h:20%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:40%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:65%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:100%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:85%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:60%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:35%"></div>
+                  <div class="sound__bass-bar" data-bar style="--h:15%"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sound Card: Clarity -->
+          <article class="sound__card sound__card--clarity" role="listitem" data-animate="fade-up" data-delay="200" aria-label="Crystal Clarity technology">
+            <div class="sound__card-inner">
+              <div class="sound__card-icon-wrap" aria-hidden="true">
+                <div class="sound__card-icon">
+                  <!-- Clarity waveform SVG -->
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 32 L10 32 L14 20 L18 44 L22 28 L26 36 L30 24 L34 40 L38 16 L42 48 L46 28 L50 36 L54 32 L60 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="sound__card-content">
+                <h3 class="sound__card-title">Crystal Clarity</h3>
+                <p class="sound__card-desc">
+                  High-frequency extension reaches 96kHz — far above what any speaker driver can
+                  reproduce. The result is a harmonic overtone structure so complete, you will
+                  hear instruments you forgot existed in recordings you've owned for decades.
+                </p>
+                <div class="sound__card-spec">
+                  <span class="sound__card-spec-value">96 kHz</span>
+                  <span class="sound__card-spec-label">Highest Response</span>
+                </div>
+              </div>
+              <div class="sound__card-visual" aria-hidden="true">
+                <div class="sound__clarity-rings" aria-hidden="true">
+                  <div class="sound__ring" data-ring></div>
+                  <div class="sound__ring" data-ring></div>
+                  <div class="sound__ring" data-ring></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sound Card: ANC -->
+          <article class="sound__card sound__card--anc" role="listitem" data-animate="fade-up" data-delay="300" aria-label="AI Adaptive Noise Cancellation technology">
+            <div class="sound__card-inner">
+              <div class="sound__card-icon-wrap" aria-hidden="true">
+                <div class="sound__card-icon">
+                  <!-- ANC shield/wave SVG -->
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                    <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2" opacity="0.7"/>
+                    <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                    <path d="M32 4 L32 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M32 52 L32 60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 32 L12 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M52 32 L60 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="sound__card-content">
+                <h3 class="sound__card-title">AI Adaptive ANC</h3>
+                <p class="sound__card-desc">
+                  Conventional ANC cancels noise reactively. Ours cancels it prophylactically.
+                  The AX-7 Neural Processor identifies and models ambient noise patterns up to
+                  200ms before they reach your ear — eliminating sound before your brain
+                  ever registers it.
+                </p>
+                <div class="sound__card-spec">
+                  <span class="sound__card-spec-value">-42 dB</span>
+                  <span class="sound__card-spec-label">Noise Reduction</span>
+                </div>
+              </div>
+              <div class="sound__card-visual" aria-hidden="true">
+                <div class="sound__anc-shield" aria-hidden="true">
+                  <div class="sound__anc-pulse" data-pulse></div>
+                  <div class="sound__anc-pulse" data-pulse></div>
+                  <div class="sound__anc-pulse" data-pulse></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- END: Sound Grid -->
+
+        <!-- Sound: Frequency Response Visualizer -->
+        <div class="sound__freq-section" data-animate="fade-up" data-delay="400">
+          <h3 class="sound__freq-title">Frequency Response Curve</h3>
+          <div class="sound__freq-chart" role="img" aria-label="AURENIX NOVA X1 frequency response graph from 4Hz to 96kHz" data-freq-chart>
+            <canvas class="sound__freq-canvas" id="freq-canvas" aria-hidden="true"></canvas>
+          </div>
+          <div class="sound__freq-labels" aria-hidden="true">
+            <span>4 Hz</span>
+            <span>20 Hz</span>
+            <span>100 Hz</span>
+            <span>1 kHz</span>
+            <span>10 kHz</span>
+            <span>96 kHz</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END: SOUND SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 05: BATTERY + COMFORT
+         Split layout: Battery left / Comfort right
+         ==================================================== -->
+    <section class="endurance" id="endurance" aria-label="Battery life and wearing comfort" data-section="endurance">
+
+      <div class="endurance__container">
+
+        <!-- Endurance: Section Label -->
+        <div class="endurance__label-wrap" data-animate="fade-up">
+          <span class="section-label" role="text">Endurance &amp; Comfort</span>
+        </div>
+
+        <!-- Endurance: Split Layout -->
+        <div class="endurance__split">
+
+          <!-- Split: Battery Column -->
+          <div class="endurance__col endurance__col--battery" data-animate="fade-right">
+            <div class="endurance__col-inner">
+
+              <div class="endurance__icon-wrap" aria-hidden="true">
+                <!-- Battery SVG icon -->
+                <svg class="endurance__icon" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="1" y="5" width="72" height="30" rx="5" stroke="currentColor" stroke-width="2"/>
+                  <rect x="3" y="7" width="62" height="26" rx="3" fill="currentColor" opacity="0.15"/>
+                  <rect x="3" y="7" width="56" height="26" rx="3" fill="currentColor" opacity="0.6"/>
+                  <path d="M73 14 L79 14 L79 26 L73 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <h2 class="endurance__col-headline">
+                40 Hours.<br />
+                <em>Unapologetically</em>.
+              </h2>
+
+              <p class="endurance__col-body">
+                A single charge takes you through a transatlantic flight, a full
+                day of deep focus work, and an evening concert — with hours to spare.
+                The NOVA X1 refuses to let battery anxiety interrupt your music.
+              </p>
+
+              <div class="endurance__battery-visual" aria-label="Battery capacity breakdown">
+                <div class="endurance__battery-bar-wrap">
+                  <div class="endurance__battery-bar" data-battery-bar>
+                    <div class="endurance__battery-fill" style="--target-width: 100%"></div>
+                  </div>
+                  <span class="endurance__battery-label">40 hrs Wireless</span>
+                </div>
+                <div class="endurance__battery-bar-wrap">
+                  <div class="endurance__battery-bar" data-battery-bar>
+                    <div class="endurance__battery-fill" style="--target-width: 130%"></div>
+                  </div>
+                  <span class="endurance__battery-label">52 hrs Wired (ANC off)</span>
+                </div>
+                <div class="endurance__battery-bar-wrap">
+                  <div class="endurance__battery-bar" data-battery-bar>
+                    <div class="endurance__battery-fill" style="--target-width: 22%"></div>
+                  </div>
+                  <span class="endurance__battery-label">3 hrs from 5 min charge</span>
+                </div>
+              </div>
+
+              <div class="endurance__battery-stats" role="list" aria-label="Battery specifications">
+                <div class="endurance__batt-stat" role="listitem">
+                  <span class="endurance__batt-value">5 min</span>
+                  <span class="endurance__batt-label">Quick Charge = 3hrs</span>
+                </div>
+                <div class="endurance__batt-stat" role="listitem">
+                  <span class="endurance__batt-value">90 min</span>
+                  <span class="endurance__batt-label">Full Charge</span>
+                </div>
+                <div class="endurance__batt-stat" role="listitem">
+                  <span class="endurance__batt-value">USB-C</span>
+                  <span class="endurance__batt-label">Universal Standard</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Split: Divider -->
+          <div class="endurance__divider" aria-hidden="true">
+            <div class="endurance__divider-line"></div>
+          </div>
+
+          <!-- Split: Comfort Column -->
+          <div class="endurance__col endurance__col--comfort" data-animate="fade-left">
+            <div class="endurance__col-inner">
+
+              <div class="endurance__icon-wrap" aria-hidden="true">
+                <!-- Comfort/weight SVG icon -->
+                <svg class="endurance__icon" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M40 10 C20 10 8 24 8 38 C8 45 14 50 22 50 L58 50 C66 50 72 45 72 38 C72 24 60 10 40 10Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                  <circle cx="20" cy="40" r="8" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
+                  <circle cx="60" cy="40" r="8" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
+                </svg>
+              </div>
+
+              <h2 class="endurance__col-headline">
+                218g.<br />
+                <em>All day. Every day.</em>
+              </h2>
+
+              <p class="endurance__col-body">
+                At 218 grams, the NOVA X1 weighs less than a paperback novel.
+                The titanium headband distributes pressure across seven contact
+                points with adjustable micro-tension — meaning the headphone
+                disappears the moment you put it on.
+              </p>
+
+              <div class="endurance__comfort-features" role="list" aria-label="Comfort features">
+
+                <div class="endurance__comfort-item" role="listitem" data-animate="fade-up" data-delay="100">
+                  <div class="endurance__comfort-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" opacity="0.3"/>
+                      <path d="M8 12h8M12 8v8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="endurance__comfort-text">
+                    <span class="endurance__comfort-title">7-Point Pressure Distribution</span>
+                    <span class="endurance__comfort-desc">No single pressure point. Complete comfort architecture.</span>
+                  </div>
+                </div>
+
+                <div class="endurance__comfort-item" role="listitem" data-animate="fade-up" data-delay="200">
+                  <div class="endurance__comfort-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                  </div>
+                  <div class="endurance__comfort-text">
+                    <span class="endurance__comfort-title">Temperature-Regulating Foam</span>
+                    <span class="endurance__comfort-desc">Phase-change material maintains optimal ear temperature.</span>
+                  </div>
+                </div>
+
+                <div class="endurance__comfort-item" role="listitem" data-animate="fade-up" data-delay="300">
+                  <div class="endurance__comfort-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                    </svg>
+                  </div>
+                  <div class="endurance__comfort-text">
+                    <span class="endurance__comfort-title">Infinite Swivel + Fold</span>
+                    <span class="endurance__comfort-desc">Precision-machined hinge. Folds flat for travel.</span>
+                  </div>
+                </div>
+
+                <div class="endurance__comfort-item" role="listitem" data-animate="fade-up" data-delay="400">
+                  <div class="endurance__comfort-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                  </div>
+                  <div class="endurance__comfort-text">
+                    <span class="endurance__comfort-title">IPX4 Sweat Resistance</span>
+                    <span class="endurance__comfort-desc">Engineered for life. Gym. Office. Rain. Perfected.</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- END: Split Layout -->
+
+      </div>
+
+    </section>
+    <!-- END: ENDURANCE SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 06: PREMIUM LIFESTYLE GALLERY
+         Cinematic image grid with full-bleed moments
+         ==================================================== -->
+    <section class="gallery" id="gallery" aria-label="AURENIX NOVA X1 lifestyle photography" data-section="gallery">
+
+      <div class="gallery__header" data-animate="fade-up">
+        <span class="section-label" role="text">The Life</span>
+        <h2 class="gallery__headline">
+          Sound wears<br />
+          <em>many faces</em>.
+        </h2>
+      </div>
+
+      <!-- Gallery: Masonry-style grid -->
+      <div class="gallery__grid" role="list" aria-label="Lifestyle gallery images">
+
+        <!-- Gallery Item 1: Large hero image -->
+        <div class="gallery__item gallery__item--large" role="listitem" data-animate="fade-in" data-delay="0">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-01.jpg"
+              alt="Person wearing AURENIX NOVA X1 headphones on a rooftop at sunset over Tokyo skyline, cinematic lighting"
+              width="900"
+              height="1200"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">Tokyo, 2024 — Rooftop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2: Square -->
+        <div class="gallery__item gallery__item--square" role="listitem" data-animate="fade-in" data-delay="100">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-02.jpg"
+              alt="Close-up of AURENIX NOVA X1 ear cup in Champagne Gold, detail of Nappa leather stitching under moody lighting"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">Champagne Gold — Material Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3: Wide landscape -->
+        <div class="gallery__item gallery__item--wide" role="listitem" data-animate="fade-in" data-delay="200">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-03.jpg"
+              alt="Recording studio scene with musician using AURENIX NOVA X1 at mixing console, warm amber studio lighting"
+              width="1200"
+              height="700"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">Studio Session — Berlin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4: Portrait -->
+        <div class="gallery__item gallery__item--portrait" role="listitem" data-animate="fade-in" data-delay="150">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-04.jpg"
+              alt="Architect at drafting desk wearing AURENIX NOVA X1 in midnight obsidian, blueprint papers and afternoon light"
+              width="600"
+              height="900"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">Deep Work Mode</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5: Flat lay detail -->
+        <div class="gallery__item gallery__item--square" role="listitem" data-animate="fade-in" data-delay="250">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-05.jpg"
+              alt="AURENIX NOVA X1 flat lay on Italian marble surface with premium accessories: leather carry case, USB-C braided cable, airplane adapter"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">What's In The Box</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6: Full-bleed landscape -->
+        <div class="gallery__item gallery__item--fullbleed" role="listitem" data-animate="fade-in" data-delay="300">
+          <div class="gallery__item-inner">
+            <img
+              class="gallery__img"
+              src="/assets/gallery-06.jpg"
+              alt="Long-exposure night travel photograph — person with AURENIX NOVA X1 on train, city lights blurred through window"
+              width="1600"
+              height="900"
+              loading="lazy"
+            />
+            <div class="gallery__item-overlay" aria-hidden="true">
+              <span class="gallery__item-caption">In Transit — Your World, Scored</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END: Gallery Grid -->
+
+    </section>
+    <!-- END: GALLERY SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 07: TECHNICAL SPECIFICATIONS
+         Full specifications table
+         ==================================================== -->
+    <section class="specs" id="specs" aria-label="AURENIX NOVA X1 full technical specifications" data-section="specs">
+
+      <div class="specs__container">
+
+        <!-- Specs: Header -->
+        <div class="specs__header" data-animate="fade-up">
+          <span class="section-label" role="text">Under the Hood</span>
+          <h2 class="specs__headline">
+            Full Technical<br />
+            <em>Specifications</em>.
+          </h2>
+        </div>
+
+        <!-- Specs: Table Wrapper -->
+        <div class="specs__table-wrap" data-animate="fade-up" data-delay="100">
+          <table class="specs__table" role="table" aria-label="AURENIX NOVA X1 technical specifications">
+            <caption class="specs__table-caption">AURENIX NOVA X1 — Complete Specification Sheet</caption>
+
+            <!-- Specs: Audio Section -->
+            <thead>
+              <tr>
+                <th class="specs__th specs__th--category" colspan="2" scope="colgroup">Audio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Driver Type</td>
+                <td class="specs__value">50mm Dynamic, Beryllium-coated diaphragm</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Frequency Response</td>
+                <td class="specs__value">4 Hz – 96,000 Hz (Hi-Res mode)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Impedance</td>
+                <td class="specs__value">32 Ω (wireless) / 64 Ω (wired)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Sensitivity</td>
+                <td class="specs__value">106 dB SPL/mW</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">THD</td>
+                <td class="specs__value">&lt; 0.05% at 1 kHz, 94 dB SPL</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Hi-Res Audio</td>
+                <td class="specs__value">24-bit / 96kHz PCM, DSD64</td>
+              </tr>
+            </tbody>
+
+            <!-- Specs: Wireless Section -->
+            <thead>
+              <tr>
+                <th class="specs__th specs__th--category" colspan="2" scope="colgroup">Wireless Connectivity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Bluetooth Version</td>
+                <td class="specs__value">Bluetooth 5.4 (multipoint — up to 3 devices)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Codecs Supported</td>
+                <td class="specs__value">aptX Lossless · aptX Adaptive · LDAC · AAC · SBC</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Wireless Range</td>
+                <td class="specs__value">30m (line of sight)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Latency (Gaming Mode)</td>
+                <td class="specs__value">&lt; 40ms</td>
+              </tr>
+            </tbody>
+
+            <!-- Specs: ANC Section -->
+            <thead>
+              <tr>
+                <th class="specs__th specs__th--category" colspan="2" scope="colgroup">Active Noise Cancellation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Microphone Array</td>
+                <td class="specs__value">10 total (6 outward-facing, 4 inward-facing)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">ANC Depth</td>
+                <td class="specs__value">-42 dB (maximum)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Processor</td>
+                <td class="specs__value">AURENIX AX-7 Neural Processor — 32-bit</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Modes</td>
+                <td class="specs__value">Full ANC · Adaptive ANC · Transparency · Wind Reduction · Off</td>
+              </tr>
+            </tbody>
+
+            <!-- Specs: Battery Section -->
+            <thead>
+              <tr>
+                <th class="specs__th specs__th--category" colspan="2" scope="colgroup">Battery &amp; Charging</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Battery Life (ANC On)</td>
+                <td class="specs__value">40 hours</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Battery Life (ANC Off)</td>
+                <td class="specs__value">52 hours</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Quick Charge</td>
+                <td class="specs__value">5 minutes = 3 hours playback</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Full Charge Time</td>
+                <td class="specs__value">90 minutes (USB-C PD)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Battery Capacity</td>
+                <td class="specs__value">1,800 mAh (dual cell)</td>
+              </tr>
+            </tbody>
+
+            <!-- Specs: Physical Section -->
+            <thead>
+              <tr>
+                <th class="specs__th specs__th--category" colspan="2" scope="colgroup">Physical</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Weight</td>
+                <td class="specs__value">218g</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Headband Material</td>
+                <td class="specs__value">Grade 5 Titanium (aerospace alloy)</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Ear Cup Material</td>
+                <td class="specs__value">Single-billet Anodized Aluminum</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Cushion Material</td>
+                <td class="specs__value">Full-grain Nappa Leather over memory foam</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Water Resistance</td>
+                <td class="specs__value">IPX4</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Folded Dimensions</td>
+                <td class="specs__value">185 × 160 × 78mm</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Connections</td>
+                <td class="specs__value">USB-C (charging + audio) · 3.5mm TRRS</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Included in Box</td>
+                <td class="specs__value">NOVA X1 headphones · Leather carry case · USB-C braided cable · 3.5mm cable · Airline adapter · Cleaning cloth · Documentation</td>
+              </tr>
+              <tr class="specs__row">
+                <td class="specs__label" scope="row">Warranty</td>
+                <td class="specs__value">2 years international · Lifetime headband guarantee</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+        <!-- Specs: Download Datasheet -->
+        <div class="specs__download" data-animate="fade-up" data-delay="200">
+          <a href="/assets/nova-x1-datasheet.pdf" class="btn btn--ghost btn--specs" download aria-label="Download AURENIX NOVA X1 full technical datasheet PDF">
+            <span class="btn__text">Download Full Datasheet</span>
+            <span class="btn__icon" aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END: SPECS SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 08: TESTIMONIALS / SOCIAL PROOF
+         Press quotes + user reviews
+         ==================================================== -->
+    <section class="testimonials" id="testimonials" aria-label="AURENIX NOVA X1 press and customer reviews" data-section="testimonials">
+
+      <div class="testimonials__container">
+
+        <!-- Testimonials: Header -->
+        <div class="testimonials__header" data-animate="fade-up">
+          <span class="section-label" role="text">What They Say</span>
+          <h2 class="testimonials__headline">
+            The world is<br />
+            <em>already listening</em>.
+          </h2>
+        </div>
+
+        <!-- Testimonials: Press Logos Row -->
+        <div class="testimonials__press" aria-label="Featured in major publications" data-animate="fade-up" data-delay="100">
+          <span class="testimonials__press-label" aria-hidden="true">As seen in</span>
+          <div class="testimonials__press-logos" role="list">
+            <div class="testimonials__press-logo" role="listitem">
+              <img src="/assets/press-wired.svg" alt="Wired Magazine" width="80" height="32" loading="lazy" />
+            </div>
+            <div class="testimonials__press-logo" role="listitem">
+              <img src="/assets/press-rolling-stone.svg" alt="Rolling Stone" width="120" height="32" loading="lazy" />
+            </div>
+            <div class="testimonials__press-logo" role="listitem">
+              <img src="/assets/press-theverge.svg" alt="The Verge" width="90" height="32" loading="lazy" />
+            </div>
+            <div class="testimonials__press-logo" role="listitem">
+              <img src="/assets/press-wallpaper.svg" alt="Wallpaper*" width="100" height="32" loading="lazy" />
+            </div>
+            <div class="testimonials__press-logo" role="listitem">
+              <img src="/assets/press-stereophile.svg" alt="Stereophile" width="110" height="32" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials: Press Quote Cards -->
+        <div class="testimonials__press-quotes" role="list" aria-label="Press reviews">
+
+          <blockquote class="testimonials__press-card" role="listitem" data-animate="fade-up" data-delay="0">
+            <p class="testimonials__press-quote">
+              "The NOVA X1 redefines what we expect from personal audio.
+              This is not an incremental upgrade — it is a generational leap."
+            </p>
+            <footer class="testimonials__press-footer">
+              <cite class="testimonials__press-source">
+                <span class="testimonials__press-pub">Wired</span>
+                <span class="testimonials__press-rating" aria-label="10 out of 10">10 / 10</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonials__press-card" role="listitem" data-animate="fade-up" data-delay="100">
+            <p class="testimonials__press-quote">
+              "At $799, the NOVA X1 is the most important headphone
+              released in a decade. We have used nothing else since."
+            </p>
+            <footer class="testimonials__press-footer">
+              <cite class="testimonials__press-source">
+                <span class="testimonials__press-pub">Stereophile</span>
+                <span class="testimonials__press-rating" aria-label="Editor's Choice Award">Editor's Choice</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonials__press-card" role="listitem" data-animate="fade-up" data-delay="200">
+            <p class="testimonials__press-quote">
+              "AURENIX have done something remarkable: made a headphone
+              that sounds more expensive than anything at twice the price."
+            </p>
+            <footer class="testimonials__press-footer">
+              <cite class="testimonials__press-source">
+                <span class="testimonials__press-pub">The Verge</span>
+                <span class="testimonials__press-rating" aria-label="9.8 out of 10">9.8 / 10</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+        </div>
+
+        <!-- Testimonials: User Reviews -->
+        <div class="testimonials__reviews" aria-label="Customer reviews" data-animate="fade-up" data-delay="200">
+
+          <!-- Aggregate Rating Display -->
+          <div class="testimonials__aggregate" aria-label="Overall rating: 4.9 out of 5 based on 1284 reviews">
+            <div class="testimonials__stars" aria-hidden="true">
+              <span class="testimonials__star testimonials__star--filled">★</span>
+              <span class="testimonials__star testimonials__star--filled">★</span>
+              <span class="testimonials__star testimonials__star--filled">★</span>
+              <span class="testimonials__star testimonials__star--filled">★</span>
+              <span class="testimonials__star testimonials__star--half">★</span>
+            </div>
+            <span class="testimonials__rating-value">4.9</span>
+            <span class="testimonials__rating-count">from 1,284 reviews</span>
+          </div>
+
+          <!-- Individual Review Cards -->
+          <div class="testimonials__review-grid" role="list">
+
+            <article class="testimonials__review-card" role="listitem" data-animate="fade-up" data-delay="0" itemscope itemtype="https://schema.org/Review">
+              <div class="testimonials__review-header">
+                <div class="testimonials__reviewer-avatar" aria-hidden="true">
+                  <img src="/assets/reviewer-1.jpg" alt="" width="48" height="48" loading="lazy" />
+                </div>
+                <div class="testimonials__reviewer-info">
+                  <span class="testimonials__reviewer-name" itemprop="author">Marcus T.</span>
+                  <span class="testimonials__reviewer-role">Music Producer, Los Angeles</span>
+                </div>
+                <div class="testimonials__review-stars" aria-label="5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="testimonials__review-text" itemprop="reviewBody">
+                "I've mixed on $40,000 studio monitors for 15 years. The NOVA X1
+                is the first headphone I've ever trusted to mix on. The imaging,
+                the depth, the accuracy — it's genuinely studio-grade."
+              </p>
+              <div class="testimonials__review-footer">
+                <span class="testimonials__review-product">NOVA X1 — Midnight Obsidian</span>
+                <time class="testimonials__review-date" datetime="2024-11-15">November 2024</time>
+              </div>
+            </article>
+
+            <article class="testimonials__review-card" role="listitem" data-animate="fade-up" data-delay="100" itemscope itemtype="https://schema.org/Review">
+              <div class="testimonials__review-header">
+                <div class="testimonials__reviewer-avatar" aria-hidden="true">
+                  <img src="/assets/reviewer-2.jpg" alt="" width="48" height="48" loading="lazy" />
+                </div>
+                <div class="testimonials__reviewer-info">
+                  <span class="testimonials__reviewer-name" itemprop="author">Isabelle M.</span>
+                  <span class="testimonials__reviewer-role">Architect, Paris</span>
+                </div>
+                <div class="testimonials__review-stars" aria-label="5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="testimonials__review-text" itemprop="reviewBody">
+                "I wear these 8–10 hours a day while I work. After six months,
+                I still forget they're on my head. That is the real achievement here.
+                The sound is extraordinary. The comfort is otherworldly."
+              </p>
+              <div class="testimonials__review-footer">
+                <span class="testimonials__review-product">NOVA X1 — Arctic Ivory</span>
+                <time class="testimonials__review-date" datetime="2024-10-03">October 2024</time>
+              </div>
+            </article>
+
+            <article class="testimonials__review-card" role="listitem" data-animate="fade-up" data-delay="200" itemscope itemtype="https://schema.org/Review">
+              <div class="testimonials__review-header">
+                <div class="testimonials__reviewer-avatar" aria-hidden="true">
+                  <img src="/assets/reviewer-3.jpg" alt="" width="48" height="48" loading="lazy" />
+                </div>
+                <div class="testimonials__reviewer-info">
+                  <span class="testimonials__reviewer-name" itemprop="author">David K.</span>
+                  <span class="testimonials__reviewer-role">Software Engineer, Berlin</span>
+                </div>
+                <div class="testimonials__review-stars" aria-label="5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="testimonials__review-text" itemprop="reviewBody">
+                "The ANC is witchcraft. I live near a train line.
+                I put on the NOVA X1 and there is nothing. Absolute silence.
+                Then the music comes in and it's like the universe just exhaled."
+              </p>
+              <div class="testimonials__review-footer">
+                <span class="testimonials__review-product">NOVA X1 — Carbon Slate</span>
+                <time class="testimonials__review-date" datetime="2024-12-01">December 2024</time>
+              </div>
+            </article>
+
+          </div>
+          <!-- END: Review Grid -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END: TESTIMONIALS SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 09: FAQ ACCORDION
+         Expandable question-answer pairs
+         ==================================================== -->
+    <section class="faq" id="faq" aria-label="Frequently asked questions about AURENIX NOVA X1" data-section="faq">
+
+      <div class="faq__container">
+
+        <!-- FAQ: Header -->
+        <div class="faq__header" data-animate="fade-up">
+          <span class="section-label" role="text">Questions</span>
+          <h2 class="faq__headline">
+            Everything you<br />
+            <em>want to know</em>.
+          </h2>
+        </div>
+
+        <!-- FAQ: Accordion -->
+        <div class="faq__accordion" role="list" data-animate="fade-up" data-delay="100">
+
+          <!-- FAQ Item 1 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+              id="faq-btn-1"
+              data-faq-btn
+            >
+              <span class="faq__question-text">When does the NOVA X1 ship?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Pre-orders placed before March 31, 2025 will ship in Q2 2025 (April–June). All subsequent pre-orders ship within 8–12 weeks. You will receive a tracking notification 48 hours before your NOVA X1 leaves our Kyoto atelier.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+              id="faq-btn-2"
+              data-faq-btn
+            >
+              <span class="faq__question-text">Does the NOVA X1 work with all devices?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Yes. The NOVA X1 supports Bluetooth 5.4 with multipoint connectivity (up to 3 devices simultaneously) and works with all Bluetooth-enabled devices. For the full Hi-Res 24-bit experience, use the included USB-C cable or pair with aptX Lossless-enabled devices. The AURENIX companion app (iOS and Android) unlocks advanced features including EQ customization, ANC profiles, and firmware updates.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+              id="faq-btn-3"
+              data-faq-btn
+            >
+              <span class="faq__question-text">What is your return and warranty policy?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>We offer a 30-day no-questions-asked return policy. If the NOVA X1 is not the greatest headphone you have ever worn, return it for a full refund — including return shipping costs. The NOVA X1 also comes with a 2-year international warranty covering all manufacturing defects, plus a lifetime guarantee on the titanium headband structure.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+              id="faq-btn-4"
+              data-faq-btn
+            >
+              <span class="faq__question-text">Can I replace the ear cushions?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Absolutely. The ear cushions are magnetically attached and remove without tools in under 5 seconds. Replacement cushions are available in Nappa Leather (standard), Alcantara, and a vegan synthetic option. They are available directly through our website and authorized retailers. We designed the NOVA X1 to last decades — not years.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-5"
+              id="faq-btn-5"
+              data-faq-btn
+            >
+              <span class="faq__question-text">How does the NOVA X1 compare to Sony and Bose?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Sony and Bose make exceptional headphones for their price point. The NOVA X1 occupies an entirely different category — analogous to comparing a Porsche to a Toyota. Both serve their purpose extraordinarily well. The NOVA X1 uses premium materials (beryllium drivers, titanium construction, hand-stitched leather) and a proprietary AI processor not found in consumer market headphones. The result is a measurably and audibly superior product designed to be owned for life, not replaced in 18 months.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-6"
+              id="faq-btn-6"
+              data-faq-btn
+            >
+              <span class="faq__question-text">Is there an AURENIX companion app?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-btn-6" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Yes — the AURENIX app is available for iOS 16+ and Android 12+. It unlocks personalized EQ profiles based on your hearing test, custom ANC modes, hotword detection, spatial audio scene selection, firmware updates, and the AURENIX Sound Lab — a curated library of ultra-high-resolution music files optimized for the NOVA X1's frequency response curve.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="faq__item" role="listitem" data-faq-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              aria-controls="faq-answer-7"
+              id="faq-btn-7"
+              data-faq-btn
+            >
+              <span class="faq__question-text">Do you offer financing or payment plans?</span>
+              <span class="faq__question-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq__answer" id="faq-answer-7" role="region" aria-labelledby="faq-btn-7" hidden data-faq-answer>
+              <div class="faq__answer-inner">
+                <p>Yes. We offer 6-month and 12-month interest-free installment plans through Klarna and Affirm at checkout. We also accept all major credit cards, Apple Pay, Google Pay, and bank transfer for wholesale orders. All payments are processed via PCI-DSS Level 1 certified infrastructure.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- END: FAQ Accordion -->
+
+      </div>
+
+    </section>
+    <!-- END: FAQ SECTION -->
+
+
+    <!-- ====================================================
+         SECTION 10: FINAL CTA
+         Conversion section with pre-order form
+         ==================================================== -->
+    <section class="cta" id="cta" aria-label="Pre-order AURENIX NOVA X1" data-section="cta">
+
+      <div class="cta__bg" aria-hidden="true">
+        <div class="cta__bg-gradient"></div>
+        <div class="cta__bg-noise"></div>
+        <canvas class="cta__bg-canvas" id="cta-canvas" aria-hidden="true" data-cta-canvas></canvas>
+      </div>
+
+      <div class="cta__container">
+
+        <!-- CTA: Product Image -->
+        <div class="cta__product-wrap" data-animate="scale-in">
+          <img
+            class="cta__product-img"
+            src="/assets/nova-x1-cta.png"
+            alt="AURENIX NOVA X1 headphones in premium carrying case, ready to ship"
+            width="600"
+            height="600"
+            loading="lazy"
+          />
+          <div class="cta__product-glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- CTA: Content -->
+        <div class="cta__content" data-animate="fade-up">
+
+          <!-- CTA: Launch Badge -->
+          <div class="cta__badge-wrap">
+            <div class="cta__badge" role="text">
+              <span class="cta__badge-dot" aria-hidden="true"></span>
+              <span class="cta__badge-text">Limited First Edition — Handcrafted in Kyoto</span>
+            </div>
+          </div>
+
+          <!-- CTA: Headline -->
+          <h2 class="cta__headline">
+            Your silence<br />
+            is <em>waiting</em>.
+          </h2>
+
+          <!-- CTA: Subtext -->
+          <p class="cta__subtext">
+            1,000 hand-numbered first-edition NOVA X1s. Once they are gone,
+            the next batch ships in Q3 2025. Secure yours now.
+          </p>
+
+          <!-- CTA: Urgency indicator -->
+          <div class="cta__urgency" role="alert" aria-live="polite" data-availability>
+            <div class="cta__urgency-inner">
+              <div class="cta__urgency-bar-wrap" aria-label="Units remaining" aria-hidden="true">
+                <div class="cta__urgency-bar">
+                  <div class="cta__urgency-fill" data-urgency-fill style="--fill: 73%"></div>
+                </div>
+              </div>
+              <span class="cta__urgency-text">
+                <strong>271 of 1,000</strong> First Edition units remaining
+              </span>
+            </div>
+          </div>
+
+          <!-- CTA: Color Selection -->
+          <div class="cta__color-select" role="group" aria-label="Select headphone colour">
+            <span class="cta__color-label">Select Colour:</span>
+            <div class="cta__swatches">
+              <label class="cta__swatch-label">
+                <input type="radio" name="cta-color" value="obsidian" class="cta__swatch-input" checked aria-label="Midnight Obsidian" />
+                <span class="cta__swatch cta__swatch--obsidian" aria-hidden="true"></span>
+              </label>
+              <label class="cta__swatch-label">
+                <input type="radio" name="cta-color" value="ivory" class="cta__swatch-input" aria-label="Arctic Ivory" />
+                <span class="cta__swatch cta__swatch--ivory" aria-hidden="true"></span>
+              </label>
+              <label class="cta__swatch-label">
+                <input type="radio" name="cta-color" value="champagne" class="cta__swatch-input" aria-label="Champagne Gold" />
+                <span class="cta__swatch cta__swatch--champagne" aria-hidden="true"></span>
+              </label>
+              <label class="cta__swatch-label">
+                <input type="radio" name="cta-color" value="slate" class="cta__swatch-input" aria-label="Carbon Slate" />
+                <span class="cta__swatch cta__swatch--slate" aria-hidden="true"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- CTA: Primary Button -->
+          <div class="cta__btn-group">
+            <a
+              href="#"
+              class="btn btn--primary btn--cta btn--large"
+              role="button"
+              aria-label="Pre-order AURENIX NOVA X1 for $799 — ships Q2 2025"
+              data-cta-button
+            >
+              <span class="btn__text">Pre-Order — $799</span>
+              <span class="btn__subtext">Free worldwide shipping · Secure checkout</span>
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </a>
+            <a href="#" class="btn btn--ghost btn--cta-secondary" aria-label="Add to wishlist">
+              <span class="btn__text">Add to Wishlist</span>
+            </a>
+          </div>
+
+          <!-- CTA: Trust Badges -->
+          <div class="cta__trust" aria-label="Purchase trust indicators">
+            <div class="cta__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="cta__trust-icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>SSL Secured</span>
+            </div>
+            <div class="cta__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="cta__trust-icon">
+                <path d="M20 12V22H4V12"/>
+                <path d="M22 7H2v5h20V7z"/>
+                <path d="M12 22V7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+              <span>Free Returns</span>
+            </div>
+            <div class="cta__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="cta__trust-icon">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <span>2-Year Warranty</span>
+            </div>
+            <div class="cta__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="cta__trust-icon">
+                <path d="M5 12l5 5L20 7"/>
+              </svg>
+              <span>30-Day Trial</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- END: CTA Content -->
+
+      </div>
+
+    </section>
+    <!-- END: CTA SECTION -->
+
+
+    <!-- ====================================================
+         FOOTER
+         Full-featured footer with nav, newsletter, legal
+         ==================================================== -->
+    <footer class="footer" id="footer" role="contentinfo" aria-label="AURENIX Audio footer">
+
+      <div class="footer__container">
+
+        <!-- Footer: Top Row -->
+        <div class="footer__top">
+
+          <!-- Footer: Brand Column -->
+          <div class="footer__brand-col">
+            <a href="/" class="footer__logo-link" aria-label="AURENIX Audio — Return to homepage">
+              <span class="footer__logo-wordmark">AURENIX</span>
+              <span class="footer__logo-sub">AUDIO</span>
+            </a>
+            <p class="footer__brand-desc">
+              Hand-assembled in Kyoto, Japan.
+              Engineered for those who hear the difference.
+            </p>
+            <!-- Social Links -->
+            <div class="footer__social" aria-label="AURENIX Audio on social media">
+              <a href="https://instagram.com/aurenixaudio" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="AURENIX Audio on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com/aurenixaudio" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="AURENIX Audio on X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://youtube.com/@aurenixaudio" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="AURENIX Audio on YouTube">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                  <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer: Navigation Columns -->
+          <nav class="footer__nav-col" aria-label="Product navigation">
+            <h3 class="footer__nav-title">Product</h3>
+            <ul class="footer__nav-list" role="list">
+              <li><a href="#product" class="footer__nav-link">NOVA X1</a></li>
+              <li><a href="#sound" class="footer__nav-link">Sound Technology</a></li>
+              <li><a href="#specs" class="footer__nav-link">Specifications</a></li>
+              <li><a href="#" class="footer__nav-link">AURENIX App</a></li>
+              <li><a href="#" class="footer__nav-link">Accessories</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav-col" aria-label="Company navigation">
+            <h3 class="footer__nav-title">Company</h3>
+            <ul class="footer__nav-list" role="list">
+              <li><a href="#" class="footer__nav-link">About AURENIX</a></li>
+              <li><a href="#" class="footer__nav-link">Our Atelier</a></li>
+              <li><a href="#" class="footer__nav-link">Craftsmanship</a></li>
+              <li><a href="#" class="footer__nav-link">Press & Media</a></li>
+              <li><a href="#" class="footer__nav-link">Careers</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav-col" aria-label="Support navigation">
+            <h3 class="footer__nav-title">Support</h3>
+            <ul class="footer__nav-list" role="list">
+              <li><a href="#faq" class="footer__nav-link">FAQ</a></li>
+              <li><a href="#" class="footer__nav-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer__nav-link">Warranty</a></li>
+              <li><a href="#" class="footer__nav-link">Register Product</a></li>
+              <li><a href="#" class="footer__nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer: Newsletter Column -->
+          <div class="footer__newsletter-col">
+            <h3 class="footer__nav-title">Stay Close</h3>
+            <p class="footer__newsletter-desc">
+              Early access, exclusive offers, and the stories behind the sound.
+            </p>
+            <div class="footer__newsletter-form" role="form" aria-label="Newsletter sign up">
+              <div class="footer__input-group">
+                <label for="footer-email" class="footer__input-label visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="footer-email"
+                  name="email"
+                  class="footer__input"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="footer-email-hint"
+                />
+                <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe to AURENIX newsletter" data-newsletter-btn>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+              <p id="footer-email-hint" class="footer__input-hint">No spam. Unsubscribe anytime. GDPR compliant.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- END: Footer Top Row -->
+
+        <!-- Footer: Divider -->
+        <div class="footer__divider" aria-hidden="true"></div>
+
+        <!-- Footer: Bottom Row -->
+        <div class="footer__bottom">
+
+          <!-- Footer: Legal Text -->
+          <div class="footer__legal">
+            <p class="footer__copyright">
+              © 2025 AURENIX Audio K.K. All rights reserved.
+              Registered in Japan. <span aria-hidden="true">·</span> Kyoto, Japan 〒606-8501
+            </p>
+          </div>
+
+          <!-- Footer: Legal Links -->
+          <nav class="footer__legal-links" aria-label="Legal navigation">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <a href="#" class="footer__legal-link">Terms of Service</a>
+            <a href="#" class="footer__legal-link">Cookie Policy</a>
+            <a href="#" class="footer__legal-link">Accessibility</a>
+          </nav>
+
+          <!-- Footer: Country / Language Selector -->
+          <div class="footer__locale">
+            <button class="footer__locale-btn" aria-label="Change region — currently: United States" aria-haspopup="listbox" data-locale-btn>
+              <span class="footer__locale-flag" aria-hidden="true">🌐</span>
+              <span class="footer__locale-text">Global (EN)</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="footer__locale-caret">
+                <path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+        <!-- END: Footer Bottom Row -->
+
+      </div>
+
+    </footer>
+    <!-- END: FOOTER -->
+
+
+  </div>
+  <!-- END: SITE WRAPPER -->
+
+
+  <!-- ======================================================
+       BACK TO TOP BUTTON
+       Appears after user scrolls past hero
+       ====================================================== -->
+  <button
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Scroll back to top of page"
+    hidden
+    data-back-to-top
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+
+  <!-- ======================================================
+       COOKIE CONSENT BANNER
+       GDPR-compliant minimal consent UI
+       ====================================================== -->
+  <div
+    class="cookie-banner"
+    id="cookie-banner"
+    role="dialog"
+    aria-modal="false"
+    aria-label="Cookie consent"
+    aria-describedby="cookie-desc"
+    hidden
+    data-cookie-banner
+  >
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text" id="cookie-desc">
+        We use cookies to enhance your experience and analyze site performance.
+        <a href="#" class="cookie-banner__link">Learn more</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--ghost btn--cookie" data-cookie-decline aria-label="Decline non-essential cookies">Decline</button>
+        <button class="btn btn--primary btn--cookie" data-cookie-accept aria-label="Accept all cookies">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       EXTERNAL SCRIPTS
+       Loaded at end of body for optimal performance
+       ====================================================== -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
